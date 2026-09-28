@@ -1,58 +1,19 @@
 // App.css файлыг React компонентод холбоно
 import "./App.css";
-
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 // ҮНДСЭН АРР КОМПОНЕНТ
 function App() {
-  // Их сургуулийн монгол нэр
-  const universityName = "ХӨДӨӨ АЖ АХУЙН ИХ СУРГУУЛЬ";
-
-  // Их сургуулийн англи нэр
-  const englishName = "MONGOLIAN UNIVERSITY OF LIFE SCIENCES";
-
   // ВЭБ ХУУДАСНЫ ҮНДСЭН ХЭСЭГ
   return (
     <div className="website">
       {/* HEADER - ВЭБИЙН ДЭЭД ХЭСЭГ */}
-      <header className="header">
-        {/* Лого болон сургуулийн нэр */}
-        <div className="logo-section">
-          {/* ХААИС-ийн лого */}
-          <img src="/logo_muls.png" alt="ХААИС лого" className="muls-logo" />
 
-          {/* Их сургуулийн нэр */}
-          <div className="university-title">
-            {/* Монгол нэр */}
-            <h1>{universityName}</h1>
-            {/* Англи нэр */}
-            <p>{englishName}</p>
-          </div>
-        </div>
-
-        {/* HEADER-ИЙН БАРУУН ТАЛЫН ЦЭС */}
-        <div className="top-links">
-          {/* Элсэлтийн бүртгэл */}
-          <a href="#">ЭЛСЭЛТИЙН БҮРТГЭЛ</a>
-          {/* Бүтэц бүрэлдэхүүн */}
-          <a href="#">БҮТЭЦ БҮРЭЛДЭХҮҮН</a>
-          {/* Төгсөгчид */}
-          <a href="#">ТӨГСӨГЧИД</a>
-        </div>
-      </header>
+      <Header />
 
       {/* NAVIGATION - ҮНДСЭН ЦЭС */}
-      <nav className="navbar">
-        <a href="#">НҮҮР</a>
-        <a href="#">ХААИС</a>
-        <a href="#">УДИРДАХ ЗӨВЛӨЛ</a>
-        <a href="#">СУРГАЛТ</a>
-        <a href="#">ЭРДЭМ ШИНЖИЛГЭЭ, ИННОВАЦ</a>
-        <a href="#">ХӨГЖЛИЙН БОДЛОГО</a>
-        <a href="#">ХАМТЫН АЖИЛЛАГАА</a>
-        <a href="#">ОЮУТАН</a>
-        <a href="#">РЕКТОРЫН АЖЛЫН АЛБА</a>
-        <a href="#">ХОЛБОО БАРИХ</a>
-      </nav>
-
+      <Navbar />
       {/* MAIN - ВЭБИЙН ҮНДСЭН АГУУЛГА */}
       <main>
         {/* HERO - НҮҮР ХУУДАСНЫ ТОМ ХЭСЭГ */}
@@ -202,53 +163,10 @@ function App() {
       </main>
 
       {/* FOOTER - ВЭБИЙН ДООД ХЭСЭГ */}
-      <footer className="footer">
-        {/* ХААИС-ийн тухай */}
-        <div className="footer-column">
-          <h2>ХӨДӨӨ АЖ АХУЙН ИХ СУРГУУЛЬ</h2>
-          <p>Мэдлэг, шинжлэх ухаан, инновацид суурилсан дээд боловсролын байгууллага.</p>
-        </div>
-
-        {/* БҮРЭЛДЭХҮҮН СУРГУУЛЬ */}
-        <div className="footer-column">
-          <h3>БҮРЭЛДЭХҮҮН СУРГУУЛЬ</h3>
-          <ul>
-            <li>Мал эмнэлгийн сургууль</li>
-            <li>Мал аж ахуй, Биотехнологийн сургууль</li>
-            <li>Инженер технологийн сургууль</li>
-            <li>Агроэкологийн сургууль</li>
-            <li>Эдийн засаг бизнесийн сургууль</li>
-            <li>Хэрэглээний шинжлэх ухааны сургууль</li>
-          </ul>
-        </div>
-
-        {/* САЛБАР СУРГУУЛЬ */}
-        <div className="footer-column">
-          <h3>САЛБАР СУРГУУЛЬ</h3>
-          <ul>
-            <li>Баянхонгор аймаг дахь салбар сургууль</li>
-            <li>Дархан-Уул аймаг дахь салбар сургууль</li>
-          </ul>
-
-          <h3 className="college-title">ХАРЬЯА ПОЛИТЕХНИКИЙН КОЛЛЕЖ</h3>
-          <ul>
-            <li>Булган аймаг дахь политехникийн коллеж</li>
-            <li>Сэлэнгэ аймаг дахь политехникийн коллеж</li>
-            <li>Төв аймаг дахь политехникийн коллеж</li>
-          </ul>
-        </div>
-
-        {/* ХОЛБОО БАРИХ */}
-        <div className="footer-column">
-          <h3>ХОЛБОО БАРИХ</h3>
-          <p>📍 17029 Улаанбаатар, Хан-Уул дүүрэг, 22-р хороо, Зайсан</p>
-          <p>☎ 75107777, 11-341377</p>
-          <p>✉ international@muls.edu.mn</p>
-          <p>✉ info@muls.edu.mn</p>
-          <p>📩 Санал хүсэлт илгээх</p>
-        </div>
-      </footer>
-
+      <Footer />
+      {/* БҮРЭЛДЭХҮҮН СУРГУУЛЬ */}
+      {/* САЛБАР СУРГУУЛЬ */}
+      {/* ХОЛБОО БАРИХ */}
       {/* COPYRIGHT */}
       <div className="copyright">© 2026 Хөдөө аж ахуйн их сургууль</div>
     </div>
