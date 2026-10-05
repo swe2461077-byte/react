@@ -1,19 +1,23 @@
 // App.css файлыг React компонентод холбоно
 import "./App.css";
+
+// Бүрэлдэхүүн хэсгүүдийг (Components) оруулж байна
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-// ҮНДСЭН АРР КОМПОНЕНТ
+import NewsCard from "./components/NewsCard";
+import Footer from "./components/Footer"; // Footer импорт хийсэн
+
+// ҮНДСЭН APP КОМПОНЕНТ
 function App() {
   // ВЭБ ХУУДАСНЫ ҮНДСЭН ХЭСЭГ
   return (
     <div className="website">
       {/* HEADER - ВЭБИЙН ДЭЭД ХЭСЭГ */}
-
       <Header />
 
       {/* NAVIGATION - ҮНДСЭН ЦЭС */}
       <Navbar />
+
       {/* MAIN - ВЭБИЙН ҮНДСЭН АГУУЛГА */}
       <main>
         {/* HERO - НҮҮР ХУУДАСНЫ ТОМ ХЭСЭГ */}
@@ -129,44 +133,30 @@ function App() {
           <h2>СҮҮЛИЙН МЭДЭЭ</h2>
 
           <div className="news-list">
-            {/* 1-р мэдээ */}
-            <article className="news-card">
-              <div className="news-image">МЭДЭЭ</div>
-              <div className="news-content">
-                <h3>ХААИС-ийн шинэ мэдээлэл</h3>
-                <p>Хөдөө аж ахуйн их сургуулийн үйл ажиллагаа, шинэ мэдээ мэдээлэл.</p>
-                <span>2026.09.06</span>
-              </div>
-            </article>
+            <NewsCard
+              title="ХААИС-ийн шинэ мэдээлэл"
+              description="Хөдөө аж ахуйн их сургуулийн үйл ажиллагаа, шинэ мэдээ мэдээлэл."
+              date="2026.09.06"
+            />
 
-            {/* 2-р мэдээ */}
-            <article className="news-card">
-              <div className="news-image">МЭДЭЭ</div>
-              <div className="news-content">
-                <h3>Сургалт, эрдэм шинжилгээний үйл ажиллагаа</h3>
-                <p>Сургалт болон эрдэм шинжилгээний үйл ажиллагааны талаарх мэдээлэл.</p>
-                <span>2026.09.05</span>
-              </div>
-            </article>
+            <NewsCard
+              title="Сургалт, эрдэм шинжилгээний үйл ажиллагаа"
+              description="Сургалт болон эрдэм шинжилгээний үйл ажиллагааны талаарх мэдээлэл."
+              date="2026.09.05"
+            />
 
-            {/* 3-р мэдээ */}
-            <article className="news-card">
-              <div className="news-image">МЭДЭЭ</div>
-              <div className="news-content">
-                <h3>Оюутны үйл ажиллагаа</h3>
-                <p>Оюутнуудад зориулсан үйл ажиллагаа, арга хэмжээний мэдээлэл.</p>
-                <span>2026.09.04</span>
-              </div>
-            </article>
+            <NewsCard
+              title="Оюутны үйл ажиллагаа"
+              description="Оюутнуудад зориулсан үйл ажиллагаа, арга хэмжээний мэдээлэл."
+              date="2026.09.04"
+            />
           </div>
         </section>
       </main>
 
       {/* FOOTER - ВЭБИЙН ДООД ХЭСЭГ */}
       <Footer />
-      {/* БҮРЭЛДЭХҮҮН СУРГУУЛЬ */}
-      {/* САЛБАР СУРГУУЛЬ */}
-      {/* ХОЛБОО БАРИХ */}
+
       {/* COPYRIGHT */}
       <div className="copyright">© 2026 Хөдөө аж ахуйн их сургууль</div>
     </div>
