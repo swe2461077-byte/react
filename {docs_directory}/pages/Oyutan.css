@@ -1,0 +1,185 @@
+/* Оюутны хуудасны үндсэн хэсэг */
+.student-page {
+  min-height: 75vh;
+  padding: 40px 20px;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+/* Хуудасны гарчиг */
+.student-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.student-label {
+  display: inline-block;
+  color: #047857;
+  background: #d1fae5;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.student-header h1 {
+  margin: 18px 0 10px;
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.student-header p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Оюутны мэдээллийн карт */
+.student-card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 35px 25px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
+}
+
+.student-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dbeafe;
+  border-radius: 50%;
+  font-size: 36px;
+}
+
+.student-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #1e3a8a;
+}
+
+.student-description {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* Оюутны тоо */
+.student-count {
+  margin: 10px 0;
+  color: #047857;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.student-status {
+  min-height: 24px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Үйлдлийн товчнууд */
+.student-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.student-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.student-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.add-btn {
+  background: #059669;
+}
+
+.add-btn:hover {
+  background: #047857;
+}
+
+.remove-btn {
+  background: #dc2626;
+}
+
+.remove-btn:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.student-btn:disabled,
+.reset-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Тэглэх товч */
+.reset-btn {
+  margin-top: 18px;
+  padding: 9px 16px;
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset-btn:hover:not(:disabled) {
+  background: #cbd5e1;
+}
+
+/* Хуудасны доод хэсэг */
+.student-footer {
+  margin-top: 35px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Гар утасны дэлгэцэд тохируулах */
+@media (max-width: 480px) {
+  .student-page {
+    padding: 25px 14px;
+  }
+
+  .student-header h1 {
+    font-size: 26px;
+  }
+
+  .student-card {
+    padding: 28px 16px;
+  }
+
+  .student-count {
+    font-size: 52px;
+  }
+
+  .student-actions {
+    flex-direction: column;
+  }
+
+  .student-btn {
+    width: 100%;
+  }
+}
